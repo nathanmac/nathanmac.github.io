@@ -21,3 +21,5 @@ markdown: kramdown
 # Analytics code
 analytics : 'UA-64488379-1'
 
+gems:
+  - jekyll-sitemap
