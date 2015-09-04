@@ -1,0 +1,50 @@
+---
+layout: default
+archive: true
+---
+<article class="post">
+    <header>
+        <h1>{{ page.title }}</h1>
+
+        <h2 class="headline">
+            {% assign d = page.date | date: "%-d" %}
+
+            {% case d %}
+                {% when '1' or '21' or '31' %}{{ d }}st
+                {% when '2' or '22' %}{{ d }}nd
+                {% when '3' or '23' %}{{ d }}rd
+            {% else %}
+                {{ d }}th
+            {% endcase %}
+
+            {{ page.date | date: "of %B %Y" }}
+        </h2>
+    </header>
+    <section id="post-body">
+        {{ content }}
+    </section>
+
+    {% include tags.html %}
+</article>
+
+<footer id="post-meta" class="clearfix">
+    <a href="http://twitter.com/{{ site.twitter_username }}">
+        <img class="avatar" src="{{ site.baseurl }}assets/images/avatar.png">
+
+        <div>
+            <span class="dark">{{ site.author }}</span>
+            <span>{{ site.description }}</span>
+        </div>
+    </a>
+
+    <section id="sharing">
+        {% include share.html %}
+    </section>
+</footer>
+
+{% if page.comments %}
+<div class="archive readmore">
+    <h3>Comments</h3>
+    {% include disqus.html %}
+</div>
+{% endif %}

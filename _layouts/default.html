@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+      {% include navigation.html %}
+
+      {% if page.profile %}
+          {% include profile.html %}
+      {% endif %}
+
+      <section id="wrapper" class="{% if page.narrow %}home{% endif %}">
+          {{ content }}
+      </section>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="{{ site.baseurl }}assets/js/main.js"></script>
+      <script src="{{ site.baseurl }}assets/js/highlight.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+
+      {% if site.analytics %}
+          {% include analytics.html %}
+      {% endif %}
+  </body>
+</html>

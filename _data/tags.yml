@@ -1,0 +1,15 @@
+laravel:
+  slug: laravel
+  name: Laravel
+
+homestead:
+  slug: homestead
+  name: Homestead
+
+elasticsearch:
+  slug: elasticsearch
+  name: Elastic Search
+
+kibana:
+  slug: kibana
+  name: Kibana

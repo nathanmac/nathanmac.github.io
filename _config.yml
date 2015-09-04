@@ -1,0 +1,23 @@
+# Site settings
+title: nathanmac.com
+email: hola@nathanmac.com
+description: >
+  Cloud, PHP, API, TDD, CI, Laravel Developer and Open Source Contributor
+
+baseurl: /
+permalink: :year/:month/:day/:title/
+paginate: 10
+
+url: "http://nathanmac.com"
+
+# Author settings
+twitter_username: nathmacn
+github_username:  nathanmac
+author: "Nathan Macnamara"
+
+# Build settings
+markdown: kramdown
+
+# Analytics code
+analytics : 'UA-64488379-1'
+
