@@ -1,2 +1,2 @@
-# nathanmac.github.io
+# nathanmac.com
 Blog
