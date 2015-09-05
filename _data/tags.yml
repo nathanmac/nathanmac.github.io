@@ -13,3 +13,11 @@ elasticsearch:
 kibana:
   slug: kibana
   name: Kibana
+
+api:
+  slug: api
+  name: API
+
+middleware:
+  slug: middleware
+  name: Middleware
