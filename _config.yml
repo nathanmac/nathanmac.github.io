@@ -4,7 +4,7 @@ email: hola@nathanmac.com
 description: >
   Cloud, PHP, API, TDD, CI, Laravel Developer and Open Source Contributor
 
-baseurl: /
+baseurl: ""
 permalink: :year/:month/:day/:title/
 paginate: 10
 
