@@ -2,7 +2,7 @@
 layout: post
 title:  "Installing Kibana on Laravel Homestead"
 description: "Visualizing and Exploring your Elastic Search Data"
-date:   2015-09-05 09:00:00
+date:   2015-09-05
 tags: [elasticsearch, kibana, laravel, homestead]
 comments: true
 ---
