@@ -491,7 +491,7 @@ Post List
 #post-nav {
 	border-top:1px solid #eee;
 	text-align:center;
-	padding-top:20px;
+	padding-top:30px;
 	font-size:13px;
 	font-weight:500;
 	margin-top: 40px;
@@ -519,21 +519,7 @@ Post List
 	padding: 1px;
 }
 
-#post-nav span.prev:hover .arrow {
-	left: -4px;
-}
 
-#post-nav span.next:hover .arrow {
-	right: -4px;
-}
-
-#post-nav span.prev:hover {
-	left: -3px;
-}
-
-#post-nav span.next:hover {
-	right: -3px;
-}
 
 /* Archive */
 h1.archive {
