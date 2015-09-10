@@ -8,7 +8,7 @@ comments: true
 ---
 
 Kibana 4 is an analytics and visualization platform that builds on Elasticsearch to give you a better understanding of
-your data. Here we cover how to quickly and easily get Kibana up and running on you're Laravel Homestead environment.
+your data. Here we cover how to quickly and easily get Kibana up and running on your Laravel Homestead environment.
 
 ![Kibana Screenshot](/assets/images/posts/kibana.png)
 
