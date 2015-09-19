@@ -25,3 +25,7 @@ middleware:
 email:
   slug: email
   name: Email
+
+eloquent:
+  slug: eloquent
+  name: Eloquent
