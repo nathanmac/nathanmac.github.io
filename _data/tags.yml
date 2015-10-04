@@ -29,3 +29,7 @@ email:
 eloquent:
   slug: eloquent
   name: Eloquent
+
+testing:
+  slug: testing
+  name: Testing
