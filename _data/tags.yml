@@ -33,3 +33,7 @@ eloquent:
 testing:
   slug: testing
   name: Testing
+
+2fa:
+  slug: 2fa
+  name: Two-Factor Authentication
