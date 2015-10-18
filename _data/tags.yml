@@ -37,3 +37,7 @@ testing:
 2fa:
   slug: 2fa
   name: Two-Factor Authentication
+
+phpunit:
+  slug: phpunit
+  name: PHPUnit
