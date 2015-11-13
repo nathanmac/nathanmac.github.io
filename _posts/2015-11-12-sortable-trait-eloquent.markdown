@@ -13,7 +13,7 @@ simple easy to understand interface for sorting results.
 It should allow ascending and descending sorting over multiple fields, the following demonstrates the
 simple functionality that can be achieved.
 
-{% highlight shell %}
+{% highlight bash %}
 GET /apps?sort=-name,+created_at
 {% endhighlight %}
 
