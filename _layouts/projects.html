@@ -8,9 +8,15 @@ layout: default
 
     <article class="post-content">
         <ul>
-            {% for repository in site.github.public_repositories %}
-                <li>[{{ repository.name }}]({{ repository.html_url }})</li>
+            {% for repo in site.data.repos.repositories %}
+            <li>
+                {% assign data = site.github.public_repositories[repo.name] %}
+                <a rel="repo" href="{{ data.html_url }}" title="{{ data.name }}">
+                    {{ data.name }} - {{ data.project_tagline }}
+                </a>
+            </li>
             {% endfor %}
         </ul>
+
     </article>
 </div>
