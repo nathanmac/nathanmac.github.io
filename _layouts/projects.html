@@ -5,23 +5,19 @@ layout: default
     <header class="post-header">
         <h1 class="post-title">Projects</h1>
     </header>
+    
+        {% for repo in site.data.repos.repositories %}
+        <div class="project">
+            {% for repository in site.github.public_repositories %}
+                {% if repository.name == repo.name %}
 
-    <article class="post-content">
-        <ul>
-            {% for repo in site.data.repos.repositories %}
-            <li>
-                {% for repository in site.github.public_repositories %}
-                    {% if repository.name == repo.name %}
+                    <a rel="repo" href="{{ repository.html_url }}" title="{{ repository.name }}" target="_blank">{{ repository.name }}</a>
+                    <p>{{ repository.description }}</p>
 
-                        <a rel="repo" href="{{ repository.html_url }}" title="{{ repository.name }}">
-                            {{ repository.name }} - {{ repository.description }}
-                        </a>
-
-                    {% endif %}
-                {% endfor %}
-            </li>
+                {% endif %}
             {% endfor %}
-        </ul>
+        </div>
+        {% endfor %}
 
-    </article>
+    </div>
 </div>
