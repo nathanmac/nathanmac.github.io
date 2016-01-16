@@ -9,7 +9,7 @@ layout: default
     <article class="post-content">
         <ul>
             {% for repository in site.github.public_repositories %}
-                <li></li>
+                <li>[{{ repository.name }}]({{ repository.html_url }})</li>
             {% endfor %}
         </ul>
     </article>
