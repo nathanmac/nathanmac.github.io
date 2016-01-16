@@ -10,10 +10,15 @@ layout: default
         <ul>
             {% for repo in site.data.repos.repositories %}
             <li>
-                {% assign data = site.github.public_repositories[repo.name] %}
-                <a rel="repo" href="{{ data.html_url }}" title="{{ data.name }}">
-                    {{ data.name }} - {{ data.project_tagline }}
-                </a>
+                {% for repository in site.github.public_repositories %}
+                    {% if repository.name == repo.name %}
+
+                        <a rel="repo" href="{{ repository.html_url }}" title="{{ repository.name }}">
+                            {{ repository.name }} - {{ repository.description }}
+                        </a>
+
+                    {% endif %}
+                {% endfor %}
             </li>
             {% endfor %}
         </ul>
