@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Helper function in Laravel for Fractal"
-description: "Desc"
+description: "API Responses"
 date:   2016-02-06
 tags: [laravel, api]
 comments: true
