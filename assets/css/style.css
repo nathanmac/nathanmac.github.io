@@ -299,6 +299,17 @@ hr {
 
 span.code { font-family:Menlo, Monaco, Courier; background-color:#EEE; font-size:14px; }
 
+code {
+	padding: 0.2em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	margin: 0;
+	font-size: 90%;
+	background-color: rgba(0,0,0,0.08);
+	border-radius: 3px;
+}
+
 pre	{
 	font-family:Menlo, Monaco, Courier;
 	/*white-space:pre-wrap;*/
