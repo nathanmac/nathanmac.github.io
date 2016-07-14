@@ -145,6 +145,10 @@ if (! function_exists('item'))
             $transformer = app()->make($transformer);
         }
 
+        if (is_object($model) && method_exists($model, 'toArray')) {
+            $model = $model->toArray();
+        }
+
         return (new \League\Fractal\Manager())
             ->createData(new \League\Fractal\Resource\Item($model, $transformer))
             ->toArray();
