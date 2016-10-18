@@ -45,3 +45,7 @@ phpunit:
 elixir:
   slug: elixir
   name: Elixir
+
+lumen:
+  slug: lumen
+  name: Lumen
