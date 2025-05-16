@@ -1,0 +1,6 @@
+title: nathanmac.com
+email: n@nathanmac.com
+github_username:  nathanmac
+
+plugins:
+  - jekyll-feed
